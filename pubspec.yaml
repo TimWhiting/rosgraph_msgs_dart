@@ -1,0 +1,10 @@
+
+name: rosgraph_msgs
+description: A ros rosgraph_msgs message package for dartros
+environment:
+  sdk: ">=2.7.0 < 3.0.0"
+
+dependencies:
+  buffer: ^1.0.6
+  dartros: ^0.0.1
+  std_msgs: ^0.0.1
