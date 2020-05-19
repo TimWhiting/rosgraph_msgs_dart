@@ -14,12 +14,12 @@ class Clock extends RosMessage<Clock> {
 
   static Clock empty$ = Clock();
   Clock({ 
-    clock,
+    RosTime clock,
   }):
   this.clock = clock ?? RosTime(secs: 0, nsecs: 0);
 
   Clock call({ 
-    clock,
+    RosTime clock,
   }) => Clock(
   clock: clock,
   );

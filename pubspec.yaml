@@ -1,6 +1,6 @@
 name: rosgraph_msgs
-description: A ros rosgraph_msgs message package for dartros
-version: 0.0.1
+description: A ROS rosgraph_msgs message package for dartros
+version: 0.0.2
 repository: https://github.com/TimWhiting/rosgraph_msgs_dart
 
 environment:
