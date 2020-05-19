@@ -2,7 +2,6 @@
 
 // (in-package rosgraph_msgs.msg)
 
-
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros/msg_utils.dart';
@@ -28,7 +27,7 @@ class Log extends RosMessage<Log> {
   List<String> topics;
 
   static Log empty$ = Log();
-  Log({ 
+  Log({
     header,
     level,
     name,
@@ -37,17 +36,16 @@ class Log extends RosMessage<Log> {
     function,
     line,
     topics,
-  }):
-  this.header = header ?? Header(),
-  this.level = level ?? 0,
-  this.name = name ?? '',
-  this.msg = msg ?? '',
-  this.file = file ?? '',
-  this.function = function ?? '',
-  this.line = line ?? 0,
-  this.topics = topics ?? [];
+  })  : this.header = header ?? Header(),
+        this.level = level ?? 0,
+        this.name = name ?? '',
+        this.msg = msg ?? '',
+        this.file = file ?? '',
+        this.function = function ?? '',
+        this.line = line ?? 0,
+        this.topics = topics ?? [];
 
-  Log call({ 
+  Log call({
     header,
     level,
     name,
@@ -56,16 +54,17 @@ class Log extends RosMessage<Log> {
     function,
     line,
     topics,
-  }) => Log(
-  header: header,
-  level: level,
-  name: name,
-  msg: msg,
-  file: file,
-  function: function,
-  line: line,
-  topics: topics,
-  );
+  }) =>
+      Log(
+        header: header,
+        level: level,
+        name: name,
+        msg: msg,
+        file: file,
+        function: function,
+        line: line,
+        topics: topics,
+      );
 
   void serialize(ByteDataWriter writer) {
     // Serializes a message object of type Log
@@ -84,7 +83,8 @@ class Log extends RosMessage<Log> {
     // Serialize message field [line]
     writer.writeUint32(line);
     // Serialize message field [topics]
-    writer.writeArray<String>(topics, (val) => writer.writeString(val), specArrayLen: null);
+    writer.writeArray<String>(topics, (val) => writer.writeString(val),
+        specArrayLen: null);
   }
 
   @override
@@ -106,7 +106,8 @@ class Log extends RosMessage<Log> {
     // Deserialize message field [line]
     data.line = reader.readUint32();
     // Deserialize message field [topics]
-    data.topics = reader.readArray<String>(() => reader.readString(), arrayLen: null);
+    data.topics =
+        reader.readArray<String>(() => reader.readString(), arrayLen: null);
     return data;
   }
 
@@ -183,6 +184,4 @@ string frame_id
   static const int WARN = 4;
   static const int ERROR = 8;
   static const int FATAL = 16;
-
 }
-
