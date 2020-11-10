@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 15:46:01 2020
+
 // (in-package rosgraph_msgs.msg)
 
 
@@ -38,7 +40,7 @@ class TopicStatistics extends RosMessage<TopicStatistics> {
 
   RosTime stamp_age_max;
 
-  static TopicStatistics empty$ = TopicStatistics();
+  static TopicStatistics $prototype = TopicStatistics();
   TopicStatistics({ 
     String topic,
     String node_pub,

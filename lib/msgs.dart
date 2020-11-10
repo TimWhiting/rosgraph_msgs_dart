@@ -1,13 +1,8 @@
+// Auto-generated. Do not edit!
 
-import 'src/msgs/Clock.dart' as Clock_msg;
+// Updated: Tue Nov 10 15:46:08 2020
+
+
 export 'src/msgs/Clock.dart';
-import 'src/msgs/TopicStatistics.dart' as TopicStatistics_msg;
 export 'src/msgs/TopicStatistics.dart';
-import 'src/msgs/Log.dart' as Log_msg;
 export 'src/msgs/Log.dart';
-
-class rosgraph_msgs {
-static Clock_msg.Clock Clock = Clock_msg.Clock.empty$;
-static TopicStatistics_msg.TopicStatistics TopicStatistics = TopicStatistics_msg.TopicStatistics.empty$;
-static Log_msg.Log Log = Log_msg.Log.empty$;
-}

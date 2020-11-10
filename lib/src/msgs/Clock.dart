@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 15:46:01 2020
+
 // (in-package rosgraph_msgs.msg)
 
 
@@ -12,7 +14,7 @@ import 'package:dartros/msg_utils.dart';
 class Clock extends RosMessage<Clock> {
   RosTime clock;
 
-  static Clock empty$ = Clock();
+  static Clock $prototype = Clock();
   Clock({ 
     RosTime clock,
   }):

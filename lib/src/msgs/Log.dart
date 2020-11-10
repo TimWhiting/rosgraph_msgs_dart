@@ -1,5 +1,7 @@
 // Auto-generated. Do not edit!
 
+// Updated: Tue Nov 10 15:46:01 2020
+
 // (in-package rosgraph_msgs.msg)
 
 
@@ -27,7 +29,7 @@ class Log extends RosMessage<Log> {
 
   List<String> topics;
 
-  static Log empty$ = Log();
+  static Log $prototype = Log();
   Log({ 
     Header header,
     int level,
@@ -92,7 +94,7 @@ class Log extends RosMessage<Log> {
     //deserializes a message object of type Log
     final data = Log();
     // Deserialize message field [header]
-    data.header = Header.empty$.deserialize(reader);
+    data.header = Header.$prototype.deserialize(reader);
     // Deserialize message field [level]
     data.level = reader.readUint8();
     // Deserialize message field [name]
