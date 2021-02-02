@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:46:01 2020
+// Updated: Mon Feb  1 12:03:00 2021
 
 // (in-package rosgraph_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -42,20 +43,20 @@ class TopicStatistics extends RosMessage<TopicStatistics> {
 
   static TopicStatistics $prototype = TopicStatistics();
   TopicStatistics({ 
-    String topic,
-    String node_pub,
-    String node_sub,
-    RosTime window_start,
-    RosTime window_stop,
-    int delivered_msgs,
-    int dropped_msgs,
-    int traffic,
-    RosTime period_mean,
-    RosTime period_stddev,
-    RosTime period_max,
-    RosTime stamp_age_mean,
-    RosTime stamp_age_stddev,
-    RosTime stamp_age_max,
+    String? topic,
+    String? node_pub,
+    String? node_sub,
+    RosTime? window_start,
+    RosTime? window_stop,
+    int? delivered_msgs,
+    int? dropped_msgs,
+    int? traffic,
+    RosTime? period_mean,
+    RosTime? period_stddev,
+    RosTime? period_max,
+    RosTime? stamp_age_mean,
+    RosTime? stamp_age_stddev,
+    RosTime? stamp_age_max,
   }):
   this.topic = topic ?? '',
   this.node_pub = node_pub ?? '',
@@ -72,21 +73,22 @@ class TopicStatistics extends RosMessage<TopicStatistics> {
   this.stamp_age_stddev = stamp_age_stddev ?? RosTime(secs: 0, nsecs: 0),
   this.stamp_age_max = stamp_age_max ?? RosTime(secs: 0, nsecs: 0);
 
+  @override
   TopicStatistics call({ 
-    String topic,
-    String node_pub,
-    String node_sub,
-    RosTime window_start,
-    RosTime window_stop,
-    int delivered_msgs,
-    int dropped_msgs,
-    int traffic,
-    RosTime period_mean,
-    RosTime period_stddev,
-    RosTime period_max,
-    RosTime stamp_age_mean,
-    RosTime stamp_age_stddev,
-    RosTime stamp_age_max,
+    String? topic,
+    String? node_pub,
+    String? node_sub,
+    RosTime? window_start,
+    RosTime? window_stop,
+    int? delivered_msgs,
+    int? dropped_msgs,
+    int? traffic,
+    RosTime? period_mean,
+    RosTime? period_stddev,
+    RosTime? period_max,
+    RosTime? stamp_age_mean,
+    RosTime? stamp_age_stddev,
+    RosTime? stamp_age_max,
   }) => TopicStatistics(
   topic: topic,
   node_pub: node_pub,

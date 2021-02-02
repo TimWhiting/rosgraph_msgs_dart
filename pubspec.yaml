@@ -1,17 +1,17 @@
 # Auto-generated. Do not edit!
 
-# Updated: Tue Nov 10 15:46:08 2020
+# Updated: Mon Feb  1 12:03:03 2021
 
 
 name: rosgraph_msgs
 description: A ros rosgraph_msgs message package for dartros
-version: 0.0.3
+version: 0.1.0-nullsafety.0
 repository: https://github.com/TimWhiting/rosgraph_msgs_dart
 
 environment:
-  sdk: ">=2.7.0 < 3.0.0"
+  sdk: ">=2.12.0-0 < 3.0.0"
 
 dependencies:
-  buffer: ^1.0.6
-  dartros: ^0.0.3+4
-  std_msgs: ^0.0.3
+  buffer: ^1.1.0-nullsafety.0
+  dartros_msgutils: ">=0.1.0-0 < 0.2.0"
+  std_msgs: ">=0.1.0-0 < 0.2.0"

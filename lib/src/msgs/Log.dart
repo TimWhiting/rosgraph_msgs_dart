@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:46:01 2020
+// Updated: Mon Feb  1 12:03:00 2021
 
 // (in-package rosgraph_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -31,14 +32,14 @@ class Log extends RosMessage<Log> {
 
   static Log $prototype = Log();
   Log({ 
-    Header header,
-    int level,
-    String name,
-    String msg,
-    String file,
-    String function,
-    int line,
-    List<String> topics,
+    Header? header,
+    int? level,
+    String? name,
+    String? msg,
+    String? file,
+    String? function,
+    int? line,
+    List<String>? topics,
   }):
   this.header = header ?? Header(),
   this.level = level ?? 0,
@@ -49,15 +50,16 @@ class Log extends RosMessage<Log> {
   this.line = line ?? 0,
   this.topics = topics ?? [];
 
+  @override
   Log call({ 
-    Header header,
-    int level,
-    String name,
-    String msg,
-    String file,
-    String function,
-    int line,
-    List<String> topics,
+    Header? header,
+    int? level,
+    String? name,
+    String? msg,
+    String? file,
+    String? function,
+    int? line,
+    List<String>? topics,
   }) => Log(
   header: header,
   level: level,
